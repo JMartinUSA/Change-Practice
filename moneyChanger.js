@@ -30,8 +30,8 @@
 	}
 
 	function resetMoney(){
-	    total = 0;
-	    moneyReceived = 0;
+	    //total = 0;
+	    //moneyReceived = 0;
 
 	    ones = 0;
 	    fives = 0;
@@ -47,20 +47,29 @@
 	function returnChange(){
 		var changeDue =moneyReceived - textTotal;
 		var changeDue = changeDue.toFixed(2);
-		alert(changeDue);
+		//alert(changeDue);
 		addChange();
 		if(changeDue == changeReturned){
 			alert("Good job!! You returned the correct change.")
+			next();
 		}else{
 			alert("Oops, try again")
+			resetMoney();
 		}
 
 
 	}
 	function addChange(){
     	changeReturned = ((twenties*2000)+(tens*1000)+(fives*500)+(ones*100)+(quarters*25)+(dimes*10)+(nickels*5)+(pennies*1))/100;
-    	alert("Change Returned: "+changeReturned);
+    	//alert("Change Returned: "+changeReturned);
     	changeReturned=changeReturned.toFixed(2);
+	}
+	function next(){
+		resetMoney();
+		changeReturned=0;
+		total=0;
+		newRandom();
+		getTotal();
 	}
 
 	/*function lightUp(){
