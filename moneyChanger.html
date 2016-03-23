@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+    <header>
+    	<title>
+    		Money Changer App
+    	</title>
+    	<link href="moneyChanger.css" rel="stylesheet" />
+
+    </header>
+
+    <body onload="onload()">
+    	<div id="container">
+
+	    	<div id="header"></div>
+	    	<div id="bought">A customer bought <div id="textBought"></div> for a total of <div id="textTotal"></div></div>
+	    	<div id="giveThem">They gave you <div id="textMoneyReceived"></div><br>what is their change?</div>
+	    	<div id="money">
+
+	    		<div id="bills">
+	    			<div id="billsPlus" class="arrowUpSpacer">
+	    				<div class="spacer" onclick="onesPlus()"><div class="arrowUp"></div></div>
+	    				<div class="spacer" onclick="fivesPlus()"><div class="arrowUp"></div></div>
+	    				<div class="spacer" onclick="tensPlus()"><div class="arrowUp"></div></div>
+	    				<div class="spacer" onclick="twentiesPlus()"><div class="arrowUp"></div></div>
+	    			</div>
+	    			<div id="ones" class="bills"><div class="img"><img src="oneDollar.jpg"/></div></div>
+	    			<div id="fives" class="bills"><div class="img"><img src="fiveDollars.jpg"/></div></div>
+	    			<div id="tens" class="bills"><div class="img"><img src="tenDollars.jpg"/></div></div>
+	    			<div id="twenties" class="bills"><div class="img"><img src="twentyDollars.jpg"/></div></div>
+	    			<div id="billsMinus" class="arrowDownSpacer">
+	    				<div class="spacer" onclick="onesMinus()"><div class="arrowDown"></div></div>
+	    				<div class="spacer" onclick="fivesMinus()"><div class="arrowDown"></div></div>
+	    				<div class="spacer" onclick="tensMinus()"><div class="arrowDown"></div></div>
+	    				<div class="spacer" onclick="twentiesMinus()"><div class="arrowDown"></div></div>
+	    			</div>
+	    		</div>
+
+	    		<div id="change">
+	    			<div id="changePlus" class="arrowUpSpacer">
+	    				<div class="spacer" onclick="penniesPlus()"><div class="arrowUp"></div></div>
+	    				<div class="spacer" onclick="nickelsPlus()"><div class="arrowUp"></div></div>
+	    				<div class="spacer" onclick="dimesPlus()"><div class="arrowUp"></div></div>
+	    				<div class="spacer" onclick="quartersPlus()"><div class="arrowUp"></div></div>
+	    			</div>
+	    			<div id="pennies" class="change"><div class="img"><img src="penny.png" class="coinImg"/></div></div>
+	    			<div id="nickels" class="change"><div class="img"><img src="nickel.png" class="coinImg"/></div></div>
+	    			<div id="dimes" class="change"><div class="img"><img src="dime.png" class="coinImg"/></div></div>
+	    			<div id="quarters" class="change"><div class="img"><img src="quarter.png" class="coinImg"/></div></div>
+	    			<div id="changeMinus" class="arrowDownSpacer">
+	    				<div class="spacer" onclick="penniesMinus()"><div class="arrowDown"></div></div>
+	    				<div class="spacer" onclick="nickelsMinus()"><div class="arrowDown"></div></div>
+	    				<div class="spacer" onclick="dimesMinus()"><div class="arrowDown"></div></div>
+	    				<div class="spacer" onclick="quartersMinus()"><div class="arrowDown"></div></div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div id="handChangeSpacer">
+    			<div id="handChange" onclick="returnChange()">Return Change</div>
+	    	</div>
+	    	<div id="footer"></div>
+	    </div>
+	<SCRIPT src="moneyChanger.js"></SCRIPT>
+    </body>
+</html>
