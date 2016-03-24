@@ -1,0 +1,173 @@
+body{
+	margin:0px;
+}
+img{
+	display: block;
+	margin:0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+	max-height: 20vh;
+
+	position:relative;
+	top:50%;
+
+}
+.img{
+	margin-left: auto;
+	margin-right: auto;
+}
+.coinImg{
+	max-height: 8vh;
+	top:1vh;
+}
+#container{
+	background: black;
+	width:100vw;
+	height:100vh;
+}
+#header{
+	height:7.5vh;
+}
+#bought{
+	color: white;
+	font-size: 6vw;
+	height:20vh;
+	text-align: center;
+}
+#giveThem{
+	color:white;
+	font-size: 6vw;
+	height:20vh;
+	text-align: center;
+}
+#money{
+	height:30vh;
+}
+.arrowUpSpacer, .arrowDownSpacer{
+	height:4vh;
+	position: absolute;
+	width: 100vw;
+	z-index: 10;
+}
+#billsMinus{
+	top:16vh;
+}
+#changeMinus{
+	top:7.5vh;
+}
+.spacer{
+	background: white;
+	border:1px solid black;
+	border-radius: 5px;
+	box-sizing: border-box;
+	opacity: .3;
+	display:inline-block;
+	float: left;
+	height:100%;
+	margin:0px;
+	width: 25%;
+}
+.spacer:click{
+	opacity:.7;
+}
+.arrowUp{
+	margin: auto;
+
+	width:0;
+	height:0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+.arrowDown{
+	margin: auto;
+
+	width:0;
+	height:0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid black;
+
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+#bills{
+	height:20vh;
+	position: relative;
+}
+#billsMinus{
+
+}
+.bills{
+	display:inline-block;
+	float: left;
+	height:20vh;
+	margin:0px;
+	width: 25%;
+}
+#ones{
+
+}
+#fives{
+
+}
+#tens{
+
+}
+#twenties{
+
+}
+#change{
+	height:10vh;
+	margin-top: 2.5vh;
+	position: relative;
+}
+.change{
+	display:inline-block;
+	float: left;
+	height:10vh;
+	margin:0px;
+	position: relative;
+	width: 25%;
+}
+#changeMinus.spacer.arrowDown{
+	border-top: 10px solid white;
+}
+#pennies{
+
+}
+#nickels{
+
+}
+#dimes{
+
+}
+#quarters{
+
+}
+#handChangeSpacer{
+	height:15vh;
+}
+#handChange{
+	background: white;
+	border-radius: 10px;
+	font-size: 20px;
+	height:10vh;
+	margin:auto;
+	opacity: .7;
+	text-align: center;
+	width:75%;
+
+	position:relative;
+	top:5vh;
+}
+#footer{
+
+	height:7.5vh;
+}
