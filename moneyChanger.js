@@ -46,7 +46,7 @@
 		resetMoney();
 		newRandom();
 		getTotal();
-		textToHtml();;
+		textToHtml();
 	}
 	
 	function returnChange(){
