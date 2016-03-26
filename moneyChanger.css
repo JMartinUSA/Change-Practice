@@ -45,16 +45,16 @@ img{
 	height:30vh;
 }
 .arrowUpSpacer, .arrowDownSpacer{
-	height:4vh;
+	height:5vh;
 	position: absolute;
 	width: 100vw;
 	z-index: 10;
 }
 #billsMinus{
-	top:16vh;
+	top:15vh;
 }
 #changeMinus{
-	top:7.5vh;
+	top:6.5vh;
 }
 .spacer{
 	background: white;
@@ -67,9 +67,6 @@ img{
 	height:100%;
 	margin:0px;
 	width: 25%;
-}
-.spacer:click{
-	opacity:.7;
 }
 .arrowUp{
 	margin: auto;
@@ -170,4 +167,45 @@ img{
 #footer{
 
 	height:7.5vh;
+}
+
+#correct{
+	background: black;
+	color:white;
+	height:100vh;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	display:none;
+	z-index:20;
+}
+#incorrect{
+	background: black;
+	color:white;
+	height:100vh;
+	position: absolute;
+	text-align: center;
+	display:none;
+	width: 100vw;
+	z-index:20;
+}
+.correctText, .incorrectText{
+	font-size: 5vh;
+	position: absolute;
+	text-align: center;
+	top:20vh;
+	width:100vw;
+}
+.next{
+	background: blue;
+	border:1px solid white;
+	border-radius: 5px;
+	font-size: 5vh;
+	position:absolute;
+	height:10vw;
+	margin-left: 30vw;
+	margin-right: 30vw;
+	text-align: center;
+	top:70vh;
+	width:40vw;
 }
