@@ -12,6 +12,14 @@
     <body onload="onload()">
     	<div id="container">
 
+    		<div id="correct"><div class="correctText">Good Job!<br>You have got <div id="inARow"></div> row correct.<br>Your accuracy is <br><div id="percentCorrect"></div></div>
+    			<div class="next" onclick="nextQuestion()">Continue</div>
+    		</div>
+
+    		<div id="incorrect"><div class="incorrectText">Incorrect..<br>Ohh! Nice try!<br>Your record is <div id="recordInARow"></div> row correct.<br>Your accuracy is <br><div id="percentIncorrect"></div></div>
+    			<div class="next" onclick="nextQuestion()">Continue</div>
+    		</div>
+
 	    	<div id="header"></div>
 	    	<div id="bought">A customer bought <div id="textBought"></div> for a total of <div id="textTotal"></div></div>
 	    	<div id="giveThem">They gave you <div id="textMoneyReceived"></div><br>what is their change?</div>
